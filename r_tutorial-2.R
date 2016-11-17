@@ -1,23 +1,33 @@
+## Question 1
+
 my.display<-function(x) {
   cat("Summary of input: \n")
   return(summary(x))
 }
 
-my.display<-function(x, display=FALSE, type=0, prob=FALSE) {
+set.seed(1234)
+my.data<-rnorm(200)
+
+my.display(my.data)
+
+
+## Question 2
+
+my.display<-function(x, display=FALSE, type="hist", prob=FALSE) {
   if (display == TRUE) {
-    if (type != 1 || type != 2) {
-      cat('Please specify type as either hist or density \n')
-    } 
-    else {
-      if (type ==1) {
+    if (type %in% c("hist", "plot")) {
+      if (type %in% "hist") {
         if (prob == TRUE) {
-          cat('HIST WITH PROB == TRUE HERE')
+          cat('\n HIST WITH PROB == TRUE HERE \n\n')
         } else {
-        cat('HIST HERE WITH PROB == FALSE')
+          cat('\n HIST HERE WITH PROB == FALSE \n\n')
         }
       } else {
-        cat('PLOT HERE')
+        cat('\n PLOT HERE \n\n')
       }
+    } 
+    else {
+      cat('\n Please specify type as either hist or density \n\n')
     }
   } 
   
@@ -28,3 +38,10 @@ set.seed(1234)
 my.data<-rnorm(200)
 
 my.display(my.data)
+
+
+
+## Question 3
+
+my.display(my.data,display=TRUE,type="hist")
+
