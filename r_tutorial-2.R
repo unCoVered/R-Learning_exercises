@@ -13,9 +13,9 @@ my.display(my.data)
 
 ## Question 2
 
-my.display<-function(x, display=FALSE, type="hist", prob=FALSE) {
+my.display<-function(x, display=FALSE, type, prob=FALSE) {
   if (display == TRUE) {
-    if (type %in% c("hist", "plot")) {
+    if (type %in% c("hist", "density")) {
       if (type %in% "hist") {
         if (prob == TRUE) {
           cat('\n HIST WITH PROB == TRUE HERE \n\n')
