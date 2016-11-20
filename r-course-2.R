@@ -1,3 +1,5 @@
+## R course: Second lesson
+
 ## Question 1
 
 my.display<-function(x) {
