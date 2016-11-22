@@ -1,6 +1,6 @@
 ## R course: Second lesson
 
-## Question 1
+## Lab - 1
 
 my.display<-function(x) {
   cat("Summary of input: \n")
@@ -13,7 +13,7 @@ my.data<-rnorm(200)
 my.display(my.data)
 
 
-## Question 2
+## Lab - 2
 
 my.display<-function(x, display=FALSE, type, prob=FALSE) {
   if (display == TRUE) {
@@ -43,7 +43,7 @@ my.display(my.data)
 
 
 
-## Question 3
+## Lab - 3
 
 my.display(my.data,display=TRUE,type="hist")
 
