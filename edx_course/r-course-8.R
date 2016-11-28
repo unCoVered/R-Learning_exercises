@@ -1,7 +1,6 @@
 ## R course: Eighth lesson
 
 
-
 ## Exercise 8.1
 
 data.frame.x<-data.frame(names=c("Gretha","Robert","John","Heather"),
